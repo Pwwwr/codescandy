@@ -4,43 +4,80 @@ html {
     font-family: var(--font);
 }
 
+
+/*header*/
+
+.header-principal nav .avatar {
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+.header-principal nav .logo {
+    margin-left: 20px;
+    width: 15%;
+}
+
+.fa-bell {
+    color: var(--gris-medio);
+    background: var(--gris-claro);
+    padding: 2%;
+    border-radius: 100%;
+    margin-left: 240px;
+    position: relative;
+    top: -10px;
+}
+
+.fa-grip-lines {
+    color: var(--color-header);
+    padding: 1%;
+    border: 1px solid var(--color-header);
+    border-radius: 4px;
+    margin-left: 5px;
+    position: relative;
+    top: -10px;
+}
+
 .img-container {
     background-color: var(--color-header);
     color: #fff;
-    line-height: 40px;
-    padding: 2%;
+    line-height: 30px;
+    padding: 3% 0 0 6%;
 }
 
 .img-container h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bolder;
     width: 70%;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 .img-container p {
     color: var(--lila);
-    font-size: 1.5rem;
-    margin-top: 15px;
-    margin-bottom: 25px;
+    font-size: 1rem;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    width: 80%;
 }
 
 .img-container .green {
-    padding: 12px;
+    padding: 10px;
     border-radius: 5px;
     border: none;
     font-family: var(--font);
-    font-size: 1rem;
+    font-size: 0.8rem;
     background: var(--boton-verde);
     color: #fff;
 }
 
 .img-container .gray {
-    padding: 12px;
+    padding: 10px;
     border-radius: 5px;
     border: none;
     font-family: var(--font);
-    font-size: 1rem;
+    font-size: 0.8rem;
     background: var(--gris-claro);
     color: var(--gris-oscuro);
 }
@@ -51,4 +88,115 @@ button:hover {
 
 .img-container img {
     margin-top: 40px;
+    width: 75%;
+}
+
+.container {
+    padding: 4% 0 0 10%;
+}
+
+.container h2 {
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--gris-oscuro);
+}
+
+.container p {
+    font-size: 0.8rem;
+    color: var(--gris-medio);
+    margin-bottom: 30px;
+}
+
+.container span {
+    color: var(--icon);
+    float: left;
+    background-color: var(--fondo-icon);
+    font-size: 0.8rem;
+    padding: 2%;
+    border-radius: 100%;
+    margin-right: 15px;
+}
+
+.container-cursos {
+    background-color: var(--gris-claro);
+    color: var(--gris-oscuro);
+}
+
+.container-cursos .card header img {
+    width: 100%;
+}
+
+.container-cursos .card {
+    border: 1px solid rgba(190, 190, 190, 0.3);
+    border-radius: 10px;
+    margin: 20px 8%;
+    min-height: 300px;
+    width: 65%;
+    background-color: #fff;
+}
+
+.container-cursos .card header {
+    display: block;
+}
+
+.container-cursos .card p {
+    padding: 0 4%;
+    margin-top: 10px;
+}
+
+.container-cursos h2 {
+    color: var(--gris-oscuro);
+    font-size: 1.1rem;
+    font-weight: 600;
+    float: left;
+    padding: 8% 0 0 8%;
+}
+
+.container-cursos button {
+    padding: 5px;
+    width: 70px;
+    border-radius: 3px;
+    border: 1px solid var(--color-header);
+    font-family: var(--font);
+    font-size: 0.8rem;
+    background: var(--gris-claro);
+    color: var(--color-header);
+    margin-top: 40px;
+}
+
+.container-cursos .recommended button {
+    margin-left: 140px;
+}
+
+.container-cursos .popular button {
+    margin-left: 210px;
+}
+
+.container-cursos .trending button {
+    margin-left: 250px;
+}
+
+footer {
+    font-size: 0.8rem;
+    color: var(--gris-medio);
+}
+
+footer span {
+    line-height: 20px;
+    margin-left: 45px;
+}
+
+footer nav {
+    padding: 3%;
+    margin-bottom: 5px;
+    text-decoration: none;
+    margin-left: 100px;
+    word-spacing: 15px;
+}
+
+@media only screen and (min-width: 600px) {
+    .header-principal a {
+        display: none;
+    }
 }
