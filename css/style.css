@@ -180,6 +180,7 @@ button:hover {
 footer {
     font-size: 0.8rem;
     color: var(--gris-medio);
+    border-top: 1px solid rgba(117, 117, 117, 0.3);
 }
 
 footer span {
@@ -195,8 +196,116 @@ footer nav {
     word-spacing: 15px;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 600px) {
     .header-principal a {
         display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .header-principal a {
+        display: none;
+    }
+    .fa-bell {
+        margin-left: 340px;
+        padding: 1.4%;
+    }
+    .container {
+        height: 120px;
+    }
+    .container .access {
+        position: relative;
+        margin-left: 40%;
+        top: -125px;
+    }
+    .container .access span {
+        font-size: 1rem;
+        padding: 2.8%;
+    }
+    .img-container {
+        display: flow-root;
+    }
+    .img-container img {
+        width: 65%;
+        float: left;
+        margin-left: 7%;
+    }
+    .container-cursos .recommended {
+        display: grid;
+        width: 800px;
+        grid-template-columns: repeat(auto-fit, 280px);
+        grid-gap: 20px;
+    }
+    .container-cursos .recommended .card {
+        width: 100%;
+    }
+    .container-cursos .popular {
+        display: grid;
+        width: 800px;
+        grid-template-columns: repeat(auto-fit, 280px);
+        grid-gap: 20px;
+    }
+    .container-cursos .popular .card {
+        width: 100%;
+    }
+    .container-cursos .trending {
+        display: grid;
+        width: 800px;
+        grid-template-columns: repeat(auto-fit, 280px);
+        grid-gap: 20px;
+    }
+    .container-cursos .trending .card {
+        width: 100%;
+    }
+    .container-cursos .recommended button {
+        margin-left: 225px;
+    }
+    .container-cursos .popular button {
+        margin-left: 225px;
+    }
+    .container-cursos .trending button {
+        margin-left: 225px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .header-principal {
+        height: 45px;
+    }
+    .header-principal nav .logo {
+        margin-left: 30px;
+        width: 10%;
+        position: relative;
+        top: -10px;
+    }
+    .header-principal nav .avatar {
+        position: relative;
+        top: -5px;
+    }
+    .fa-bell {
+        padding: 1%;
+        margin-left: 580px;
+        position: relative;
+        top: -15px;
+    }
+    .fa-grip-lines {
+        display: none;
+    }
+    .img-container {
+        height: 270px;
+    }
+    .img-container img {
+        width: 40%;
+        float: right;
+        margin-right: 22%;
+        margin-top: -219px;
+    }
+    .img-container h1 {
+        width: 30%;
+        font-size: 1.7rem;
+        line-height: 40px;
+    }
+    .img-container p {
+        width: 35%;
     }
 }
